@@ -2361,9 +2361,9 @@ TEST_F(DeclarableOpsTests3, svd_test8) {
     // u->printIndexedBuffer();
     // u->printS();
 
-    ASSERT_TRUE(expS.equalsTo(s));
-    ASSERT_TRUE(expU.equalsTo(u));
-    ASSERT_TRUE(expV.equalsTo(v));
+    ASSERT_TRUE(expS.equalsTo(s, 1e-4));
+    ASSERT_TRUE(expU.equalsTo(u, 1e-4));
+    ASSERT_TRUE(expV.equalsTo(v, 1e-4));
 
     ASSERT_TRUE(expS.isSameShape(s));
     ASSERT_TRUE(expU.isSameShape(u));
